@@ -14,4 +14,4 @@ HEALTHCHECK --interval=10s --timeout=2s --start-period=1s --retries=2 CMD ["/hea
 
 EXPOSE 4200
 
-CMD ["ng", "serve"]
+CMD ["ng", "serve", "--host", "0.0.0.0", "--disable-host-check"]
